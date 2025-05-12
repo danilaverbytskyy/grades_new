@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "primevue/*": ["./node_modules/primevue/*"],
+      "vue": ["./node_modules/vue"],
+      "vue-router": ["./node_modules/vue-router"],
+    },
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "primevue",
+      "vite/client", 
+      "./types/primevue-components.d.ts",
+     ]
+  },
+  "include": [
+    "src/**/*",
+    "types/vuei18.d.ts",
+    "types/shims-vue.d.ts"
+  ],
+}
